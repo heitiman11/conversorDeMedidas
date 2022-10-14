@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de medidas</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="conversor">
+      <div class="metros flex">
+        <p>Quantos metros você quer converter?</p>
+        <input type="number" id="metros" placeholder="Ex: 1.85">
+      </div>
+
+      <div class="conversaoTipo">
+        <p>Qual a medida de conversão desejada?</p>
+        <select name="medidas" id="medidas" class="medidas flex">
+          <option value="mm">Mílimetros(mm)</option>
+          <option value="cm">Centímetros(cm)</option>
+          <option value="dm">Decímetros(dm)</option>
+          <option value="km">Quilômetros(km)</option>
+        </select>
+      </div>
+
+      <div class="resultado" id="resultado" class="flex"></div>
+
+      <button type="submit" id="enviar" class="flex">Enviar</button>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
